@@ -7,7 +7,8 @@ import {PortfolioChart} from './components/PortfolioChart';
 import { KendoGrid } from './components/live-grid/KendoGrid';
 import {DataProvider} from './components/live-grid/services';
 import { Button, Chip, ChipList } from "@progress/kendo-react-buttons";
-import { caretAltUpIcon} from "@progress/kendo-svg-icons";
+import { caretAltUpIcon, fileTxtIcon, bellIcon} from "@progress/kendo-svg-icons";
+import { SvgIcon } from '@progress/kendo-react-common';
 
 function App() {
 
@@ -49,13 +50,13 @@ function App() {
           
             </BadgeContainer>
             <BadgeContainer>
-              <span className="k-icon k-i-file-txt docs-icon" />
+              <SvgIcon icon={fileTxtIcon} size='xxlarge'/>
             </BadgeContainer>
           </Button>
             <span className="k-appbar-separator" />
         <Button className="k-button k-button-md k-rounded-md k-button-flat k-button-flat-base">
             <BadgeContainer>
-              <span className="k-icon k-i-bell" />
+              <SvgIcon icon={bellIcon} size='xlarge'/>
               <Badge shape="dot" themeColor="info" size="small" position="inside" />
             </BadgeContainer>
           </Button>
