@@ -77,7 +77,7 @@ export const TickerCell = props => {
   const fieldName = props.field || '';
   let value = props.dataItem[fieldName];
   return <td>
-      <img alt={`KendoReact Grid ${value} icon`} src={`./${value}.png`} />
+      <img alt={`KendoReact Grid ${value} icon`} src={require(`../../assets/${value}.png`)} />
       <span style={{
       color: '#4B5FFA',
       marginLeft: '5px',
