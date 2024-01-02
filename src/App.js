@@ -7,7 +7,8 @@ import {PortfolioChart} from './components/PortfolioChart';
 import { KendoGrid } from './components/live-grid/KendoGrid';
 import {DataProvider} from './components/live-grid/services';
 import { Button, Chip, ChipList } from "@progress/kendo-react-buttons";
-import { caretAltUpIcon} from "@progress/kendo-svg-icons";
+import { caretAltUpIcon, fileTxtIcon, bellIcon} from "@progress/kendo-svg-icons";
+import { SvgIcon } from '@progress/kendo-react-common';
 
 function App() {
 
@@ -49,13 +50,13 @@ function App() {
           
             </BadgeContainer>
             <BadgeContainer>
-              <span className="k-icon k-i-file-txt docs-icon" />
+              <a href='https://www.telerik.com/kendo-react-ui/components/grid/get-started/' style={{color: '#FFF'}}><SvgIcon icon={fileTxtIcon} size='xxlarge'/></a>
             </BadgeContainer>
           </Button>
             <span className="k-appbar-separator" />
         <Button className="k-button k-button-md k-rounded-md k-button-flat k-button-flat-base">
             <BadgeContainer>
-              <span className="k-icon k-i-bell" />
+              <SvgIcon icon={bellIcon} size='xlarge'/>
               <Badge shape="dot" themeColor="info" size="small" position="inside" />
             </BadgeContainer>
           </Button>
@@ -78,7 +79,7 @@ function App() {
       border: 0,
     }}>
       <Avatar type="image" className="right-panel-avatar">
-        <img src={'./BITCOINLARGER.png'} alt="KendoReact Layout Kendoka Avatar" />
+        <img src={require('./assets/BITCOINLARGER.png')} alt="KendoReact Layout Kendoka Avatar" />
       </Avatar>
       <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
@@ -101,7 +102,7 @@ function App() {
       border: 0,
     }}>
       <Avatar type="image" className="right-panel-avatar">
-        <img src={'./OX.png'} alt="KendoReact Layout Kendoka Avatar" />
+        <img src={require('./assets/OX-larger.png')} alt="KendoReact Layout Kendoka Avatar" />
       </Avatar>
       <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
@@ -124,7 +125,7 @@ function App() {
       border: 0,
     }}>
       <Avatar type="image" className="right-panel-avatar">
-        <img src={'./TETHERUS.png'} alt="KendoReact Layout Kendoka Avatar" />
+        <img src={require('./assets/TETHERUS-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
       </Avatar>
       <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
@@ -147,7 +148,7 @@ function App() {
       border: 0,
     }}>
       <Avatar type="image" className="right-panel-avatar">
-        <img src={'./SHIB.png'} alt="KendoReact Layout Kendoka Avatar" />
+        <img src={require('./assets/SHIB-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
       </Avatar>
       <div style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
@@ -240,7 +241,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./BITCOINLARGER.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/BITCOINLARGER.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
@@ -274,7 +275,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./TETHERUS.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/TETHERUS-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
@@ -309,7 +310,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./XEC.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/XEC-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
@@ -344,7 +345,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./USD.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/USD-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
@@ -379,7 +380,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./BUSD.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/BUSD-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
@@ -414,7 +415,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./ETHERIUM.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/ETHERIUM-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
@@ -447,7 +448,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./EUR.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/EUR-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
@@ -480,7 +481,7 @@ function App() {
           padding: '25px 0 0' 
         }}>
         <Avatar type="image" className="right-panel-avatar">
-            <img src={'./INCH.png'} alt="KendoReact Layout Kendoka Avatar" />
+            <img src={require('./assets/INCH-lg.png')} alt="KendoReact Layout Kendoka Avatar" />
           </Avatar>
             <div style={{
               marginTop: '12px',
